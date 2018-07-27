@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('NanumBarunGothic.eot');
+        url('NanumBarunGothic.woff') format('woff'),
+        url('NanumBarunGothic.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumBarunGothicBold';
+    src: url('NanumBarunGothicBold.eot');
+        url('NanumBarunGothicBold.woff') format('woff'),
+        url('NanumBarunGothicBold.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color:white;
+    font-family:'NanumBarunGothic', serif;
+    font-size:40px;
+    letter-spacing: 15px;
+    text-align:center;
+    padding:17px;
+    margin:0;
+    background-color:rgb(240, 210, 210);
+}
+
+
+@media(max-width:920px){
+    h1 {
+        color:white;
+        font-family:'NanumBarunGothic', serif;
+        font-size:30px;
+        letter-spacing: 10px;
+        text-align:center;
+        padding:17px;
+        margin:0;
+        background-color:rgb(240, 210, 210);
+    }
+}
+
+@media(max-width:830px){
+    h1 {
+        color:white;
+        font-family:'NanumBarunGothic', serif;
+        font-size:30px;
+        letter-spacing: 5px;
+        text-align:center;
+        padding:17px;
+        margin:0;
+        background-color:rgb(240, 210, 210);
+    }
+}
+
+body {
+    margin:0;
+}
+
+#pcTopMenu {
+    float: right;
+    position: relative;
+    top:-40px;
+}
+
+#pcTopMenu li {
+    font-family: 'NanumBarunGothic', serif;
+    font-size: 15px;
+    display: inline;
+    padding:0;
+}
+
+#pcTopMenu li a {
+    padding:10px;
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: rgb(240, 210, 210);
+    font-family: 'NanumBarunGothic', serif;
+    font-size: 15px;
+    padding: 0;
+}
+
+#pcTopMenu .dropdown-item {
+    padding-left: 20px;
+}
+
+#mTopMenu {
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    top:-53px;
+}
+
+#mTopMenu .dropdown-item {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}

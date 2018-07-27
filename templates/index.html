@@ -7,23 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    
 </head>
 
 <body>
-    <h1>BLOSSOMI</h1>
-    <ul id="topMenu">
-        <li>로그인</li>
-        <li>회원가입</li>
-        <li>장바구니</li>
-        <li>고객센터</li>
+    <h1>BLOSSOMI❤︎</h1>
+
+    <!-- PC 화면 탑메뉴 표시 -->
+    <ul class="nav nav-fill d-none d-md-flex" id="pcTopMenu">
+        <li class="nav-item">
+            <a class="nav-link" href="#">로그인</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">회원가입</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">장바구니</a>
+        </li>
+        <li class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">고객센터</a>
+            <div class="dropdown-menu" style="margin:0;">
+                    <a class="dropdown-item" href="#">공지사항</a>
+                    <a class="dropdown-item" href="#">Q & A</a>
+                    <a class="dropdown-item" href="#">F A Q</a>
+                    <a class="dropdown-item" href="#">이벤트</a>
+                    <a class="dropdown-item" href="#">고객후기</a>
+            </div>
+        </li>
     </ul>
+
+
+    <div class="dropdown d-md-none d-sm-flex" id="mTopMenu">
+        <button class="btn btn-secondary" style="border: 0; background-color:transparent; padding:0;" type="button" id="dropdown-mMenu-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars" style="color: white; font-size: 30px; padding:0;"></i>
+            <div class="dropdown-menu" aria-labelledby="dropdown-mMenu-btn" style="border: transparent; margin-top: 10px; padding:0;">
+                <a class="dropdown-item" href="#">공지사항</a>
+                <a class="dropdown-item" href="#">Q & A</a>
+                <a class="dropdown-item" href="#">F A Q</a>
+                <a class="dropdown-item" href="#">이벤트</a>
+                <a class="dropdown-item" href="#">고객후기</a>
+            </div>
+        </button>
+    </div>
+    <!--
+    <i class="fas fa-bars fa-lg dropdown d-md-none d-sm-flex" id="mTopMenu" style="color:white; font-size:30px;">
+        <a class="btn btn-secondary dropdown-toggle" id="dropdown-mMenu"data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+        <div class="dropdown-menu" aria-labelledby="dropdown-mMenu">
+                <a class="dropdown-item" href="#">공지사항</a>
+                <a class="dropdown-item" href="#">Q & A</a>
+                <a class="dropdown-item" href="#">F A Q</a>
+                <a class="dropdown-item" href="#">이벤트</a>
+                <a class="dropdown-item" href="#">고객후기</a>
+        </div>
+    </i>
+    -->
+
+
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- FontAwesome JS-->
+    <script src="../static/fontawesome-free-5.2.0-web/js/all.js"></script>
 </body>
