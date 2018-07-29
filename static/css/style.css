@@ -1,3 +1,6 @@
+/*
+    import Fonts
+*/
 @font-face {
     font-family: 'NanumBarunGothic';
     src: url('NanumBarunGothic.eot');
@@ -14,6 +17,20 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* General */
+body {
+    background: rgb(240, 210, 210);
+    margin:0;
+    padding:0;
+}
+a {
+    color: black;
+}
+
+/*
+    Header Sizing for responsive web.
+*/
 
 h1 {
     color:white;
@@ -53,9 +70,9 @@ h1 {
     }
 }
 
-body {
-    margin:0;
-}
+/*
+    Top Menu for PC
+*/
 
 #pcTopMenu {
     float: right;
@@ -86,6 +103,9 @@ body {
     padding-left: 20px;
 }
 
+
+/* Top Menu for mobile */
+
 #mTopMenu {
     float: left;
     position: relative;
@@ -98,4 +118,46 @@ body {
     padding: 10px;
     font-size: 20px;
     color: white;
+}
+
+
+
+/* Home Carousel */
+
+#homeCarouselIndicators .carousel-control-next{
+    height: 80%;
+}
+#homeCarouselIndicators .carousel-control-prev{
+    height: 80%;
+}
+
+@media(min-width:768px){
+    #homeCarouselIndicators .carousel-inner {
+        top: -42px;
+    }
+
+    #homeCarouselIndicators .carousel-indicators {
+        bottom: 42px;
+    }
+    
+}
+
+@media(max-width:767px){
+    #homeCarouselIndicators .carousel-inner {
+        top: -30px;
+    }
+
+    #homeCarouselIndicators .carousel-indicators {
+        bottom: 30px;
+    }
+}
+
+
+@media (max-width:565px){
+    .card-columns{
+        column-count: 2;
+        column-gap: 0.7rem;
+        orphans: 1;
+        widows: 1;
+    }
 }
